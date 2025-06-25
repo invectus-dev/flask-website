@@ -5,8 +5,9 @@
 The project is in early development. Current progress includes:
 
 - ✅ Basic Flask setup
-  // ✅ User authentication (login & register)
 - ✅ Modular blueprint structure
+- ✅ Route
+- ✅ Make a frontend ( Jinja, Boostrap )
 - ❌ Email verification
 - ❌ Admin dashboard
 - ❌ Unit tests
