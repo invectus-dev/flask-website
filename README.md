@@ -1,5 +1,19 @@
+## 📈 Project Status
 
-![Progress](https://img.shields.io/badge/Progress-40%25-yellowgreen?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-40%25-orange?style=for-the-badge)
+
+The project is in early development. Current progress includes:
+
+- ✅ Basic Flask setup
+- ✅ User authentication (login & register)
+- ✅ SQLite database integration
+- ✅ Modular blueprint structure
+- ❌ Email verification
+- ❌ Admin dashboard
+- ❌ Unit tests
+- ❌ Deployment configuration
+
+Estimated completion: **40%**
 
 
 # Flask Website 🚀
