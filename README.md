@@ -126,7 +126,5 @@ This project follows the structure taught by Tech With Tim:
 
 ---
 
-# 📄 License
 
-# This project is open-source and available under the [MIT License](LICENSE).
 
