@@ -67,8 +67,6 @@ For production deployments, consider using **Gunicorn** or **uWSGI** behind **NG
 ```
 flask-website/
 ├── app.py             # Application entry point
-├── requirements.txt   # Python dependencies
-├── .env.example       # Template for environment config
 ├── templates/         # Jinja2 HTML templates
 └── static/            # CSS, JS, images, etc.
 ```
