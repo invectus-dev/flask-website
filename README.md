@@ -5,8 +5,7 @@
 The project is in early development. Current progress includes:
 
 - ✅ Basic Flask setup
-- ✅ User authentication (login & register)
-- ✅ SQLite database integration
+  // ✅ User authentication (login & register)
 - ✅ Modular blueprint structure
 - ❌ Email verification
 - ❌ Admin dashboard
