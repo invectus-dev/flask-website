@@ -130,9 +130,3 @@ This project follows the structure taught by Tech With Tim:
 
 This project is open-source and available under the [MIT License](LICENSE).
 
-```
-
----
-
-Let me know if you'd like me to generate a `requirements.txt`, add deployment steps (e.g. to Render or Heroku), or include screenshots!
-```
