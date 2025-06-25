@@ -1,4 +1,3 @@
-````markdown
 # Flask Website
 
 A simple and elegant Flask-based web application template.
@@ -22,7 +21,6 @@ A simple and elegant Flask-based web application template.
    ```bash
    git clone https://github.com/invectus-dev/flask-website.git
    cd flask-website
-````
 
 2. Create and activate a virtual environment
 
