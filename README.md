@@ -12,6 +12,7 @@ The project is in early development. Current progress includes:
 - ❌ Admin dashboard
 - ❌ Unit tests
 - ❌ Deployment configuration
+- Etc...
 
 Estimated completion: **40%**
 
