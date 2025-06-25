@@ -1,135 +1,138 @@
-# Flask Website
 
-A simple and elegant Flask-based web application template.
 
-## 🚀 Features
+# Flask Website 🚀
 
-- Lightweight structure: built with Flask and Jinja2
-- Modular design for easy customization and extension
-- Clean templates and static file organization
-- Configurable environment (development & production)
-- Ready for integration with databases, APIs, authentication, and more
+A fully functional Flask-based website with user authentication, database support, and clean modular design — inspired by [Tech With Tim's Flask Tutorial](https://youtu.be/dam0GPOAvVI).
 
-## 🛠️ Prerequisites
+---
+
+## 📺 Tutorial Reference
+
+This project is based on the YouTube tutorial by Tech With Tim:  
+🔗 [Watch here](https://youtu.be/dam0GPOAvVI)
+
+---
+
+## 📁 Project Structure
+
+```
+
+flask-website/
+├── app/
+│   ├── **init**.py       # App factory
+│   ├── auth.py           # Authentication routes
+│   ├── views.py          # Main routes
+│   ├── models.py         # SQLAlchemy models
+│   └── templates/        # HTML templates
+│       ├── base.html
+│       ├── home.html
+│       ├── login.html
+│       └── signup.html
+├── static/               # Static files (CSS, JS, etc.)
+├── instance/
+│   └── config.py         # Configuration settings
+├── requirements.txt      # Python dependencies
+└── run.py                # Entry point
+
+````
+
+---
+
+## ⚙️ Features
+
+- ✅ User Registration & Login
+- ✅ Secure password hashing
+- ✅ Protected routes with Flask-Login
+- ✅ SQLite database with SQLAlchemy
+- ✅ Bootstrap-styled frontend
+- ✅ Modular Flask blueprints
+
+---
+
+## 📦 Requirements
 
 - Python 3.8+
-- pip (or `venv` for virtual environments)
+- pip (Python package manager)
 
-## 📦 Installation
+---
 
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/invectus-dev/flask-website.git
-   cd flask-website
+## 🛠️ Setup Instructions
 
-2. Create and activate a virtual environment
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # Linux/Mac  
-   venv\Scripts\activate     # Windows
-   ```
-
-3. Install dependencies
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## ⚙️ Configuration
-
-Copy the example environment file and customize your settings:
+1. **Clone the repository**
 
 ```bash
-cp .env.example .env
-```
+git clone https://github.com/invectus-dev/flask-website.git
+cd flask-website
+````
 
-Edit `.env` to adjust:
-
-* `FLASK_APP` – entry point, e.g. `app.py`
-* `FLASK_ENV` – `development` or `production`
-* Optional API keys, database URIs, or app-specific options
-
-## 🚧 Running the App
-
-Start the development server:
+2. **Create a virtual environment**
 
 ```bash
-flask run
+python -m venv venv
+source venv/bin/activate       # macOS/Linux
+venv\Scripts\activate          # Windows
 ```
 
-Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
+3. **Install dependencies**
 
-For production deployments, consider using **Gunicorn** or **uWSGI** behind **NGINX**.
-
-## 🔄 Project Structure
-
-```
-flask-website/
-├── app.py             # Application entry point
-├── templates/         # Jinja2 HTML templates
-└── static/            # CSS, JS, images, etc.
+```bash
+pip install -r requirements.txt
 ```
 
-* `app.py` contains Flask routes and core logic.
-* `templates/` and `static/` include the UI layer and assets.
-* Organize additional modules or blueprints as your project grows.
+4. **Configure environment**
 
-## 📈 Extending the Application
+Create a `config.py` inside the `instance/` directory:
 
-1. **Database integration**
-   Add Flask extensions (e.g., `Flask-SQLAlchemy`, `Flask-Migrate`) and configure in `app.py`.
+```python
+# instance/config.py
 
-2. **User authentication**
-   Integrate `Flask-Login`, `Flask-Dance`, or JWT-based access control.
+SECRET_KEY = 'your-secret-key'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite3'
+```
 
-3. **API consumption**
-   Use `requests` or similar to fetch external data (news, products, APIs).
+5. **Run the app**
 
-4. **Background tasks**
-   Use `Celery`, `RQ`, or Python threads for asynchronous processing.
+```bash
+python run.py
+```
 
-## ✅ Testing
+Visit: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-* (Optional) Add test suite using `pytest` or `unittest`
-* Run tests with:
+---
 
-  ```bash
-  pytest
-  ```
+## ✅ Usage
 
-## 🤝 Contributing
+* Go to `/auth/signup` to create a new user.
+* Log in via `/auth/login`.
+* Access protected routes like `/` after logging in.
+* Logout via `/auth/logout`.
 
-Contributions are welcome! To contribute:
+---
 
-1. Fork the repo
-2. Create a feature branch: `git checkout -b feature/awesome-feature`
-3. Commit your changes: `git commit -m 'Add awesome feature'`
-4. Push to your fork: `git push origin feature/awesome-feature`
-5. Open a pull request
+## 🧩 Customization Ideas
 
-Please ensure your code follows **PEP 8**, includes relevant tests, and updates documentation.
+* Add user profiles
+* Create a blog system
+* Add email verification
+* Use PostgreSQL or MySQL
+* Deploy with Gunicorn + Nginx or Render
+
+---
+
+## 🙌 Credit
+
+This project follows the structure taught by Tech With Tim:
+📹 **[Python Flask Website Full Tutorial](https://youtu.be/dam0GPOAvVI)**
+
+---
 
 ## 📄 License
 
-[MIT](LICENSE) — feel free to use and modify this project in your own apps!
-
----
-
-Need any help or want to request a feature? Open an issue or send a pull request. Happy coding! 🎉
+This project is open-source and available under the [MIT License](LICENSE).
 
 ```
 
 ---
 
-### 📝 Next steps
-
-- Replace `app.py` reference with your actual entry file if named differently.
-- Expand “Features” and “Extending” sections with project-specific details (e.g., news fetching, API usage).
-- Add badges (e.g. build status, license, code coverage) at the top for improved visibility.
-- Provide a `.env.example` that highlights necessary variables.
-- Include screenshots or animated GIFs if your app has a UI portion.
-
-Let me know if you want help customizing it further with project-specific info!
-::contentReference[oaicite:0]{index=0}
+Let me know if you'd like me to generate a `requirements.txt`, add deployment steps (e.g. to Render or Heroku), or include screenshots!
 ```
