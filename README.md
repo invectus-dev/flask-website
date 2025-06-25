@@ -113,7 +113,7 @@ SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite3'
 python run.py
 ```
 
-Visit: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+than Visit: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
