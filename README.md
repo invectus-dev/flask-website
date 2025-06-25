@@ -1,4 +1,6 @@
 
+![Progress](https://img.shields.io/badge/Progress-75%25-yellowgreen?style=for-the-badge)
+
 
 # Flask Website 🚀
 
